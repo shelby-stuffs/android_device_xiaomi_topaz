@@ -160,6 +160,10 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Disable RescueParty due to high risk of data loss
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.disable_rescue=true
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4.vendor \
