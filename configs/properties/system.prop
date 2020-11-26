@@ -4,6 +4,9 @@ persist.vendor.cne.feature=1
 # Fwk-Detect
 ro.vendor.qti.va_aosp.support=1
 
+# Display
+ro.input.video_enabled=false
+
 # Graphics
 debug.sf.disable_backpressure=1
 
