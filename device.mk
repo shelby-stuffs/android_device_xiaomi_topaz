@@ -354,6 +354,10 @@ PRODUCT_COPY_FILES += \
 # Kernel
 KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
+# LMK
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lmk.filecache_min_kb=153600
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
