@@ -483,6 +483,11 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.voice-V1-ndk.vendor \
     librmnetctl
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
