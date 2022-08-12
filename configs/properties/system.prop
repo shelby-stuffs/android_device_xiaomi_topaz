@@ -20,10 +20,6 @@ debug.hwui.skia_atrace_enabled=false
 # IMS
 persist.vendor.ims.no_stapa=1
 
-# IOrap
-persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
-ro.iorapd.enable=false
-
 # Media
 media.settings.xml=/vendor/etc/media_profiles_khaje_v0.xml
 media.aac_51_output_enabled=true
