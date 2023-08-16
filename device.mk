@@ -395,23 +395,18 @@ PRODUCT_PACKAGES += \
     libOmxCore
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-awaken
-
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon \
-    FrameworksResCommon \
-    FrameworksResTarget \
-    FrameworksResTopaz \
+    TopazCarrierConfig \
+    TopazCarrierConfigResMiui \
+    TopazFrameworksOverlay \
+    TopazTelephonyOverlay \
+    TopazTetheringConfigOverlay \
     SettingsResTopaz \
     SettingsOverlayM7G \
     SettingsOverlayM7N \
     SettingsOverlayM7L \
     SettingsOverlayM7IN \
-    SystemUIResCommon \
     SystemUIResTopaz \
-    TelecommResCommon \
-    TelephonyResCommon \
     WifiResCommon \
     WifiResTarget
 
