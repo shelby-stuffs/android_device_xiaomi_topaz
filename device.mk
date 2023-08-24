@@ -293,6 +293,7 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.topaz.perf.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
