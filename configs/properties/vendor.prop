@@ -239,7 +239,9 @@ ro.hardware.keystore_desede=true
 ro.control_privapp_permissions=enforce
 
 # Media
+debug.stagefright.c2inputsurface=-1
 vendor.mm.enable.qcom_parser=16711663
+vendor.media.omx=0
 persist.mm.enable.prefetch=true
 
 # Netflix
