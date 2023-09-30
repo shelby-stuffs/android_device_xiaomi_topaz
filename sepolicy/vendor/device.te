@@ -1,7 +1,5 @@
-type vendor_displayfeature_device, dev_type;
-type sound_device, dev_type, mlstrustedobject;
+# Fingerprint
 type fingerprint_device, dev_type;
-type lirc_device, dev_type;
 
 # Utags
 type vendor_utags_block_device, dev_type;
