@@ -427,6 +427,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(LOCAL_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -461,8 +466,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.network-V1-ndk.vendor \
     android.hardware.radio.sim-V1-ndk.vendor \
     android.hardware.radio.voice-V1-ndk.vendor \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl
 
 # Sensors
