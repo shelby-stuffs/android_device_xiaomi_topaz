@@ -206,8 +206,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.xiaomi \
-    android.hardware.health-service.xiaomi_recovery \
+    android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery \
     android.hardware.health-V1-ndk.vendor \
     android.hardware.health@2.1.vendor
 
@@ -380,6 +380,7 @@ TARGET_KERNEL_VERSION := 5.15
 
 TARGET_ADRENO_COMPONENT_VARIANT := adreno-s
 TARGET_WLAN_COMPONENT_VARIANT := wlan
+TARGET_USE_AIDL_QTI_HEALTH := true
 
 TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
