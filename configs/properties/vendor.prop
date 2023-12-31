@@ -243,6 +243,7 @@ debug.stagefright.c2inputsurface=-1
 vendor.mm.enable.qcom_parser=16711663
 vendor.media.omx=0
 persist.mm.enable.prefetch=true
+ro.mediaserver.64b.enable=true
 
 # Netflix
 vendor.netflix.bsp_rev=Q6115-31409-1
