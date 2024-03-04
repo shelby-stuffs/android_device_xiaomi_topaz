@@ -139,4 +139,10 @@ $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(CNE_SYMLINKS) $(EGL_LIB_SYMLINKS) $(EGL_LIB64_SYMLINKS) $(IMS_SYMLINKS) $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS) $(RFS_MSM_WPSS_SYMLINKS) $(WFD_SERVICE_SYMLINKS) $(WIFI_FIRMWARE_SYMLINKS)
 
+# Kernel headers
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard device/xiaomi/topaz-kernel/kernel-headers/*)
+	rm -rf $@
+	mkdir -p $@/include
+	cp -a device/xiaomi/topaz-kernel/kernel-headers/. $@/include
+
 endif
