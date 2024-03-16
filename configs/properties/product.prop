@@ -7,6 +7,7 @@ audio.sys.offload.pstimeout.secs=3
 ro.af.client_heap_size_kbyte=7168
 
 # Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3700
 bluetooth.profile.a2dp.source.enabled?=true
 bluetooth.profile.asha.central.enabled?=true
 bluetooth.profile.avrcp.controller.enabled?=false
