@@ -105,6 +105,8 @@ BOARD_BOOTCONFIG := \
 
 BOARD_KERNEL_CMDLINE := \
     kasan=off \
+    rcu_nocbs=all \
+    rcutree.enable_rcu_lazy=1 \
     video=vfb:640x400,bpp=32,memsize=3072000
 
 # Kernel prebuilt
@@ -117,7 +119,6 @@ TARGET_NO_KERNEL_OVERRIDE := true
 
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/kernel
-
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 
 PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
