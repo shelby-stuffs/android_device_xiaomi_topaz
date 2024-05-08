@@ -392,6 +392,9 @@ PRODUCT_PACKAGES += \
     libOmxCore
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-awaken
+
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
@@ -408,10 +411,6 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     WifiResCommon \
     WifiResTarget
-
-# Overlays Lineage
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
