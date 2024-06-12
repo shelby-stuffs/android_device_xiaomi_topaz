@@ -421,6 +421,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TopazCarrierConfig \
     TopazCarrierConfigResMiui \
+    TopazDeviceAsWebcamOverlay \
     TopazFrameworksOverlay \
     TopazTelephonyOverlay \
     TopazTetheringConfigOverlay \
