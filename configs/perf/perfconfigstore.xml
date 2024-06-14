@@ -21,9 +21,6 @@ property Name is called. -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
                 <Prop Name="vendor.iop.enable_uxe" Value="false" />
                 <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
-                <Prop Name="ro.vendor.perf.enable.prefapps" Value="true" />
-                <Prop Name="ro.vendor.use_perf_hal_for_preferredapps" Value="true" />
-                <Prop Name="ro.vendor.perf.count.prefapps" Value="5" />
                 <Prop Name="ro.vendor.perf.enable.prekill"  Value="true" />
                 <Prop Name="vendor.prekill_MIN_ADJ_to_Kill" Value="800"  />
                 <Prop Name="vendor.prekill_MAX_ADJ_to_Kill" Value="1000"  />
