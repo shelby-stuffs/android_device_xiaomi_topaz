@@ -261,6 +261,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health-V1-ndk.vendor \
     android.hardware.health@2.1.vendor
 
+# Hacks
+TARGET_DISABLE_EPPE := true
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
