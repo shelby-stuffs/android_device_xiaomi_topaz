@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_topaz.mk
+    $(LOCAL_DIR)/halcyon_topaz.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_topaz-user \
-    awaken_topaz-userdebug \
-    awaken_topaz-eng
+    halcyon_topaz-user \
+    halcyon_topaz-userdebug \
+    halcyon_topaz-eng
