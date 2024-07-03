@@ -167,6 +167,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
 
 # Display
+TARGET_USE_YCRCB_CAMERA_ENCODE := true
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4.vendor \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
