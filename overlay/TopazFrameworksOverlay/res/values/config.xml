@@ -64,22 +64,6 @@
          lux * (1.0f + CONSTRAINT_VALUE). When the current lux is higher than this threshold,
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
-    <integer-array name="config_ambientThresholdLevels">
-        <item>2</item>
-        <item>10</item>
-        <item>30</item>
-        <item>100</item>
-        <item>800</item>
-        <item>2000</item>
-        <item>4000</item>
-    </integer-array>
-
-    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_ambientThresholdLevels. The brightening threshold is calculated as
-         lux * (1.0f + CONSTRAINT_VALUE). When the current lux is higher than this threshold,
-         the screen brightness is recalculated. See the config_ambientThresholdLevels
-         description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
         <item>4</item>
         <item>5</item>
@@ -422,11 +406,6 @@
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
      <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
-	 
-    <!-- Screen brightness used to dim the screen when the user activity
-         timeout expires.  May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">8</integer>
 
     <!-- The display uses different gamma curves for different refresh rates. It's hard for panel
          vendors to tune the curves to have exact same brightness for different refresh rate. So
