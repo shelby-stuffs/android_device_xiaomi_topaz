@@ -771,6 +771,10 @@
          backlight values -->
     <bool name="config_displayBrightnessBucketsInDoze">true</bool>
 
+    <!-- Maximum color temperature, in Kelvin, supported by Night display.
+         Setting this to track config_displayWhiteBalanceColorTemperatureDefault (currently 6500K). -->
+    <integer name="config_nightDisplayColorTemperatureMax">6500</integer>
+
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
      <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL -->
