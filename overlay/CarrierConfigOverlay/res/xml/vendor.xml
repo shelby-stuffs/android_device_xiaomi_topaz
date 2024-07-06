@@ -93,6 +93,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="ignore_rtt_mode_setting_bool" value="false"/>
         <int name="default_rtt_mode_int" value="0" />
 
+        <!-- AOSPA Edit: Enable LTE+ icon by default -->
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
+
+        <!-- AOSPA Edit: Set LTE+ threshold bandwidth to 0 by default -->
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0"/>
+
         <!-- HD/VOLTE icon support -->
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
@@ -122,7 +128,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <!-- AOSPA Edit: Allow VoLTE, WFC, and ViLTE by default -->
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="001" mnc="01">
