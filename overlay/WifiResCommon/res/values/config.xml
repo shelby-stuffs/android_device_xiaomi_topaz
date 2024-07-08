@@ -45,11 +45,6 @@
          range string like '36-48,149'. -->
     <string name="config_wifiSoftap5gChannelList" translatable="false"></string>
 
-    <!-- List of allowed channels in 6GHz band for softap. If the device doesn't want to restrict
-         channels this should be empty. Values is a comma separated channel string and/or channel
-         range string like '36-48,149'. -->
-    <string name="config_wifiSoftap6gChannelList" translatable="false"></string>
-
     <!-- Boolean indicating that only configurations that have the same pre-shared key will be linked -->
     <bool name="config_wifi_only_link_same_credential_configurations" translatable="false">false</bool>
 
