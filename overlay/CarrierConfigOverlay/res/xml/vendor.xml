@@ -99,9 +99,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <!-- AOSPA Edit: Set LTE+ threshold bandwidth to 0 by default -->
         <int name="lte_plus_threshold_bandwidth_khz_int" value="0"/>
 
-        <!-- HD/VOLTE icon support -->
-        <boolean name="config_update_service_status" value="false"/>
-        <boolean name="config_update_volte_icon" value="false"/>
+        <!-- AOSPA Edit: HD/VOLTE icon support -->
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="true"/>
 
         <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
 
