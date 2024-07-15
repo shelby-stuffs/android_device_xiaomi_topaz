@@ -27,6 +27,7 @@ bluetooth.profile.sap.server.enabled?=false
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Radio
+persist.vendor.ims.no_stapa=1
 persist.vendor.radio.enable_temp_dds=true
 ro.vendor.radio.fastdormancy=true
 ro.vendor.radio.features_common=3
