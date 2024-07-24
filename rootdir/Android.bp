@@ -27,6 +27,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "etc/init.qcom.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.topaz.perf.rc",
     src: "etc/init.topaz.perf.rc",
     sub_dir: "init",
