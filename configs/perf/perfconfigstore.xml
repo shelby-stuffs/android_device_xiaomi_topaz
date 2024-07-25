@@ -19,15 +19,11 @@ property Name is called. -->
 
                 <!--Vendor Properties -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
-                <Prop Name="vendor.iop.enable_uxe" Value="0" />
-                <Prop Name="vendor.enable.prefetch" Value="false" />
-                <Prop Name="vendor.iop.enable_prefetch_ofr" Value="0" />
-                <Prop Name="vendor.perf.iop_v3.enable" Value="false" />
-                <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
-                <Prop Name="vendor.iop.enable_speed" Value="false" />
                 <Prop Name="vendor.debug.enable.memperfd" Value="true" />
                 <Prop Name="ro.vendor.perf.enable.procomp" Value="false" />
                 <Prop Name="vendor.perf.pfar.enable" Value="1"/>
+                <!-- AOSPA Edit: Disable IOPd explicitly -->
+                <Prop Name="vendor.iop.enabled" Value="false" />
 
                 <Prop Name="ro.vendor.perf.ss" Value="false" />
                 <Prop Name="ro.vendor.perf.lal" Value="false" />
