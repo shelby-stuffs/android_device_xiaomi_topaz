@@ -351,7 +351,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
     libcodec2_hidl_plugin.vendor \
@@ -428,6 +427,9 @@ PRODUCT_PACKAGES += \
 TARGET_BOARD_PLATFORM := bengal
 TARGET_BOARD_SUFFIX := _515
 TARGET_KERNEL_VERSION := 5.15
+
+TARGET_COMMON_QTI_COMPONENTS += \
+    av
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
