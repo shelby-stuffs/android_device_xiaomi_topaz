@@ -432,7 +432,8 @@ TARGET_WLAN_COMPONENT_VARIANT := wlan
 
 TARGET_COMMON_QTI_COMPONENTS += \
     av \
-    wlan
+    wlan \
+    wfd
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -559,11 +560,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
     libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/xiaomi/topaz/topaz-vendor.mk)
