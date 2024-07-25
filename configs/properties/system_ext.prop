@@ -1,6 +1,3 @@
-# Dalvik
-dalvik.vm.dex2oat64.enabled=true
-
 # DPM
 persist.vendor.dpm.feature=11
 

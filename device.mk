@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
@@ -137,7 +134,6 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libutilscallstack.vendor:64 \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
@@ -161,10 +157,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
-
-# Disable RescueParty due to high risk of data loss
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.disable_rescue=true
 
 # Display
 TARGET_USE_YCRCB_CAMERA_ENCODE := true
@@ -269,13 +261,8 @@ PRODUCT_PACKAGES += \
     android.hardware.health-V1-ndk.vendor \
     android.hardware.health@2.1.vendor
 
-# Hacks
-TARGET_DISABLE_EPPE := true
-
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.allocator@1.0.vendor \
-    android.hidl.base@1.0.vendor \
     libhidltransport.vendor \
     libhwbinder.vendor
 
@@ -354,7 +341,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
 # Kernel
-KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
+KERNEL_PREBUILT_DIR := device/xiaomi/topaz-kernel
 
 # LMK
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -421,6 +408,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPATopazFrameworksOverlay \
     TopazCarrierConfig \
     TopazCarrierConfigResMiui \
     TopazDeviceAsWebcamOverlay \
@@ -436,6 +424,11 @@ PRODUCT_PACKAGES += \
     WifiResCommon \
     WifiResTarget
 
+# Platform
+TARGET_BOARD_PLATFORM := bengal
+TARGET_BOARD_SUFFIX := _515
+TARGET_KERNEL_VERSION := 5.15
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -448,11 +441,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(LOCAL_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -463,14 +451,8 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libcurl.vendor:64 \
     libjson \
-    libjsoncpp.vendor \
-    libqti_vndfwk_detect.vendor \
-    libqti_vndfwk_detect_vendor \
     libqti_vndfwk_detect_vendor.vendor \
-    libsqlite.vendor \
-    libvndfwk_detect_jni.qti.vendor \
     libvndfwk_detect_jni.qti_vendor.vendor
 
 # QTI service tracker
@@ -499,7 +481,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.1-service.multihal \
     libsensorndkbridge
 
@@ -523,26 +504,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # Telephony
-PRODUCT_PACKAGES += \
-    extphonelib \
-    extphonelib-product \
-    extphonelib.xml \
-    extphonelib_product.xml \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti-telephony-hidl-wrapper-prd \
-    qti_telephony_hidl_wrapper.xml \
-    qti_telephony_hidl_wrapper_prd.xml \
-    qti-telephony-utils \
-    qti-telephony-utils-prd \
-    qti_telephony_utils.xml \
-    qti_telephony_utils_prd.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
@@ -576,10 +537,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
-# Vendor service manager
-PRODUCT_PACKAGES += \
-    vndservicemanager
-
 # Verified Boot
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
@@ -598,7 +555,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd-V1-ndk.vendor \
     android.hardware.wifi.supplicant-V1-ndk.vendor \
     hostapd \
-    libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     wpa_supplicant \
@@ -620,7 +576,6 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libpng.vendor:32 \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
