@@ -6,9 +6,6 @@ persist.vendor.service.bdroid.soc.alwayson=true
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 
-# DPM
-persist.vendor.dpm.feature=11
-
 # GPS
 persist.sys.gps.fence=true
 
@@ -20,5 +17,4 @@ ro.surface_flinger.supports_background_blur=1
 vendor.media.target_variant=_khaje_v0
 
 # Radio
-ro.telephony.sim_slots.count=1
 telephony.active_modems.max_count=2
