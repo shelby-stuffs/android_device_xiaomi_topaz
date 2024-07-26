@@ -98,39 +98,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 TARGET_USE_YCRCB_CAMERA_ENCODE := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4.vendor \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    gralloc.bengal \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    libdisplayconfig.system.qti \
-    libgralloc.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libsdmcore \
-    libsdmutils \
-    vendor.display.config@1.14 \
-    vendor.display.config@1.11.vendor \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.allocator@1.0.vendor \
-    vendor.qti.hardware.display.allocator@3.0.vendor \
-    vendor.qti.hardware.display.allocator@4.0.vendor \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.composer@1.0.vendor \
-    vendor.qti.hardware.display.composer@2.0.vendor \
-    vendor.qti.hardware.display.composer@3.0.vendor \
-    vendor.qti.hardware.display.mapper@1.0.vendor \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor
-
-# Display NDK
-PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator-V1-ndk.vendor \
     android.hardware.graphics.common-V3-ndk.vendor \
     android.hardware.light-V2-ndk.vendor \
@@ -140,7 +108,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V3-ndk.vendor \
     vendor.qti.hardware.display.config-V4-ndk.vendor \
     vendor.qti.hardware.display.config-V5-ndk.vendor \
-    vendor.qti.hardware.display.config-V6-ndk.vendor
+    vendor.qti.hardware.display.config-V6-ndk.vendor \
+    vendor.qti.hardware.memtrack-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
@@ -352,6 +321,7 @@ TARGET_COMMON_QTI_COMPONENTS += \
     av \
     audio \
     bt \
+    display \
     gps \
     perf \
     telephony \
