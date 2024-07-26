@@ -291,14 +291,13 @@ PRODUCT_PACKAGES += \
     TopazFrameworksOverlay \
     TopazTelephonyOverlay \
     TopazTetheringConfigOverlay \
+    TopazWifiOverlay \
     SettingsResTopaz \
     SettingsOverlayM7G \
     SettingsOverlayM7N \
     SettingsOverlayM7L \
     SettingsOverlayM7IN \
-    SystemUIResTopaz \
-    WifiResCommon \
-    WifiResTarget
+    SystemUIResTopaz
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
@@ -318,6 +317,7 @@ TARGET_COMMON_QTI_COMPONENTS += \
     bt \
     display \
     gps \
+    overlay \
     perf \
     telephony \
     vibrator \
