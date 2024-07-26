@@ -341,8 +341,9 @@ TARGET_USE_AIDL_QTI_BT_AUDIO := true
 
 TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
-    av \
+    alarm \
     audio \
+    av \
     bt \
     gps \
     overlay \
