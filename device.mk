@@ -165,16 +165,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V2-ndk.vendor
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
-
 # Graphics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -353,6 +343,7 @@ TARGET_BOARD_PLATFORM := bengal
 TARGET_BOARD_SUFFIX := _515
 TARGET_KERNEL_VERSION := 5.15
 
+TARGET_GPS_COMPONENT_VARIANT := gps
 TARGET_WLAN_COMPONENT_VARIANT := wlan
 TARGET_USE_AIDL_QTI_HEALTH := true
 TARGET_USE_AIDL_QTI_BT_AUDIO := true
@@ -361,6 +352,7 @@ TARGET_COMMON_QTI_COMPONENTS += \
     av \
     audio \
     bt \
+    gps \
     perf \
     telephony \
     vibrator \
