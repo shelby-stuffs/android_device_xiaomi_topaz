@@ -108,7 +108,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V3-ndk.vendor \
     vendor.qti.hardware.display.config-V4-ndk.vendor \
     vendor.qti.hardware.display.config-V5-ndk.vendor \
-    vendor.qti.hardware.display.config-V6-ndk.vendor
+    vendor.qti.hardware.display.config-V6-ndk.vendor \
     vendor.qti.hardware.memtrack-service
 
 TARGET_DISP_DIR := 5.15
