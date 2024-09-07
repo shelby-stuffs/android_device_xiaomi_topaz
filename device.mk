@@ -181,6 +181,11 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
+    init.goodix.events.sh \
+    init.qti.dcvs.sh \
+    init.qti.early_init.sh
+
+PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.zram \
     fstab.qcom.vendor_ramdisk \
@@ -188,12 +193,6 @@ PRODUCT_PACKAGES += \
     init.topaz.perf.rc \
     init.xiaomi.rc \
     ueventd.topaz.rc
-
-PRODUCT_PACKAGES += \
-    init.goodix.events.sh \
-    init.qti.dcvs.sh \
-    init.qti.early_init.sh \
-    init.topaz_perf.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom

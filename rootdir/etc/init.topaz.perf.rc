@@ -1,6 +1,4 @@
 on property:vendor.post_boot.parsed=1
-    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.topaz_perf.sh
-
     # Disable native stats collection service
     stop statsd
 
