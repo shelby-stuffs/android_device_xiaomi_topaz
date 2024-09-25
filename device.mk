@@ -111,8 +111,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V6-ndk.vendor \
     vendor.qti.hardware.memtrack-service
 
-TARGET_DISP_DIR := 5.15
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
