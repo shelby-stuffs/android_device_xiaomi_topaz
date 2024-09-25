@@ -179,7 +179,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.zram \
     fstab.qcom.vendor_ramdisk \
     init.target.rc \
     init.topaz.perf.rc \
