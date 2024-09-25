@@ -13,3 +13,62 @@ cc_library_static {
         "system/libbase/include"
     ]
 }
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.topaz.perf.rc",
+    src: "init.topaz.perf.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.xiaomi.rc",
+    src: "init.xiaomi.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.topaz.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.topaz.rc",
+    device_specific: true,
+}
+
+sh_binary {
+    name: "init.goodix.events.sh",
+    src: "init.goodix.events.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "init.qti.dcvs.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.early_init.sh",
+    src: "init.qti.early_init.sh",
+    vendor: true,
+}
