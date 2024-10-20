@@ -317,8 +317,9 @@ TARGET_USE_AIDL_QTI_HEALTH := true
 TARGET_USE_AIDL_QTI_BT_AUDIO := true
 
 TARGET_COMMON_QTI_COMPONENTS += \
-    av \
+    alarm \
     audio \
+    av \
     bt \
     display \
     gps \
