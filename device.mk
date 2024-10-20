@@ -196,21 +196,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0.vendor \
-    android.hardware.keymaster@4.0.vendor \
     android.hardware.keymaster@4.1.vendor \
     libkeymaster_messages.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.gatekeeper-V1-ndk.vendor \
-    android.hardware.keymaster-V3-ndk.vendor \
-    android.hardware.keymaster-V4-ndk.vendor \
-    android.hardware.keymaster@4.0.vendor \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.security.keymint-V1-ndk \
-    android.hardware.security.keymint-V2-ndk \
-    android.hardware.security.keymint-V3-ndk
 
 # Keymint
 PRODUCT_PACKAGES += \
