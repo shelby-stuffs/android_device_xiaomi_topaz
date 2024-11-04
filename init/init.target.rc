@@ -214,6 +214,12 @@ service mi_thermald /system/vendor/bin/mi_thermald
     group system
     seclabel u:r:mi_thermald:s0
 
+service feature_enabler_client /vendor/bin/feature_enabler_client
+    class late_start
+    user system
+    group system graphics
+    disabled
+
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
     user system
