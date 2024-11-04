@@ -47,6 +47,12 @@ service stflashtool /vendor/bin/STFlashTool
     user nfc
     oneshot
 
+service feature_enabler_client /vendor/bin/feature_enabler_client
+    class late_start
+    user system
+    group system graphics
+    disabled
+
 service vendor.goodix-events /vendor/bin/init.goodix.events.sh
     class late_start
     user root
