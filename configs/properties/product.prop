@@ -16,7 +16,6 @@ persist.sys.fuse.passthrough.enable=true
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Radio
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.vendor.ims.no_stapa=1
-persist.vendor.radio.enable_temp_dds=true
 ro.vendor.radio.fastdormancy=true
-ro.vendor.radio.features_common=3

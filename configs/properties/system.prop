@@ -18,10 +18,6 @@ ro.nfc.port=I2C
 # NTP
 persist.backup.ntpServer="0.pool.ntp.org"
 
-# Radio
-persist.vendor.radio.atfwd.start=true
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
