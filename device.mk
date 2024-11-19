@@ -222,19 +222,6 @@ PRODUCT_COPY_FILES += \
 # Kernel
 KERNEL_PREBUILT_DIR := device/xiaomi/topaz-kernel
 
-# LMK
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.lmk.critical_upgrade=true \
-    ro.lmk.downgrade_pressure=60 \
-    ro.lmk.filecache_min_kb=153600  \
-    ro.lmk.kill_heaviest_task=false \
-    ro.lmk.kill_timeout_ms=100 \
-    ro.lmk.stall_limit_critical=40 \
-    ro.lmk.thrashing_limit=30 \
-    ro.lmk.thrashing_limit_decay=50 \
-    ro.lmk.upgrade_pressure=40 \
-    ro.lmk.use_minfree_levels=true
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
