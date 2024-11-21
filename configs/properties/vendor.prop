@@ -96,6 +96,9 @@ ro.opengles.version=196610
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Keyguard
+persist.wm.enable_remote_keyguard_animation=0
+
 # Media
 vendor.mm.enable.qcom_parser=16711663
 vendor.media.omx=0
@@ -137,6 +140,12 @@ ro.usb.uvc.enabled=true
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
+
+# WLAN
+ro.hardware.wlan.chip=wcn3950
+ro.hardware.wlan.dbs=0
+ro.hardware.wlan.mimo=0
+ro.hardware.wlan.vendor=qcom
 
 # Zygote
 zygote.critical_window.minute=10
